@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional website for creating and sharing posts">
+    <meta name="keywords" content="posts, blog, writing, sharing">
+    <meta name="author" content="Your Name">
+    <title>Blogging Website</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+            <h1>Blogging Website</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="https://advaithvishal.github.io/Login-Page/">Login</a></li>
+                <li><a href="https://advaithvishal.github.io/SignUp-Page/">Register</a></li>
+                <li><a href="#create-post">Create Post</a></li>
+                <li><a href="#view-posts">View Posts</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-switch">
+            <label for="theme-switch" class="toggle-label">
+                <span class="toggle-icon"></span>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <section id="create-post">
+            <h2>Create a Post</h2>
+            <form id="postForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">Content:</label>
+                <textarea id="content" name="content" rows="10" required></textarea>
+
+                <button type="submit">Submit Post</button>
+            </form>
+        </section>
+
+        <section id="view-posts">
+            <h2>All Posts</h2>
+            <div id="search-bar">
+                <input type="text" id="search-input" placeholder="Search posts...">
+            </div>
+            <div id="postList"></div>
+            <div id="pagination"></div>
+        </section>
+    </main>
+
+    <footer>
+        
+        <div class="contact-form">
+            <h3>Contact Us</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <p>&copy; 2024 Blogging Website</p>
+        <div class="social-links">
+            <a href="#" title="Facebook"><img src="facebook.png" alt="Facebook"></a>
+            <a href="#" title="Twitter"><img src="twitter.png" alt="Twitter"></a>
+            <a href="#" title="Instagram"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
