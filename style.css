@@ -239,7 +239,64 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
+
 .contact-form button[type="submit"]:hover {
     background-color: #3e8e41;
 }
 
+/* Responsive Styles */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .social-links {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 10px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    nav li {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .contact-form {
+        padding: 5px;
+    }
+}
